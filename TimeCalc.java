@@ -9,7 +9,7 @@ public class TimeCalc {
         hours = hours + howmuchhours;
         minutes = minutes + howmuchminutes;
         if (minutes>59){
-            hours = hours +(minutes % 60);
+            hours = hours +(minutes / 60);
             minutes = minutes % 60; 
         }
         if (hours>23){
