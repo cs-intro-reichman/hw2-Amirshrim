@@ -17,7 +17,7 @@ public class CalcPi {
 		if (sum!=1){
         sum = sum * 4.0;
 		}
-        System.out.println("pi according to Java: " + Math.PI);
-        System.out.println("pi, approximated: " + sum);
+        System.out.println("pi according to Java:  " + Math.PI);
+        System.out.println("pi, approximated:  " + sum);
     }
 }
