@@ -10,14 +10,12 @@ public class CalcPi {
             else {
                 sum = sum + 1.0 / rational; 
             }
-            
-			rational = rational + 2;
+            rational = rational + 2;
         }
         
-		if (sum!=1){
         sum = sum * 4.0;
-		}
-        System.out.println("pi according to Java:   " + Math.PI);
+        
+        System.out.println("pi according to Java: " + Math.PI);
         System.out.println("pi, approximated:     " + sum);
     }
 }
