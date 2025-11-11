@@ -4,21 +4,14 @@ public class Cheers {
         String word = args[0];
         String letters = "AEFHILMNORSX";
         
-        // הנחה: הקלט num תקין וחיובי (כדי לא להוסיף בדיקות שלא נדרשו)
         int num = Integer.parseInt(args[1]);
-        
-        // המרת המילה לרישיות
         word = word.toUpperCase();
-        
-        // 1. לולאה להדפסת שורות "Give me..."
         for(int i = 0; i < word.length(); i++){
             char currentLetter = word.charAt(i); 
-            
-            // בדיקה האם התו קיים במחרוזת letters (דורש "an")
+        
             if (letters.indexOf(currentLetter) >= 0) { 
                 System.out.println("Give me an " + currentLetter + ": " + currentLetter + "!");
             } else {
-                // דורש "a"
                 System.out.println("Give me a " + currentLetter + ": " + currentLetter + "!");
             }
         }

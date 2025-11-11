@@ -14,9 +14,9 @@ public class CalcPi {
 			rational = rational + 2;
         }
         
+		if (sum!=1){
         sum = sum * 4.0;
-        
-        // 5. הדפסת תוצאות
+		}
         System.out.println("pi according to Java: " + Math.PI);
         System.out.println("pi, approximated: " + sum);
     }
